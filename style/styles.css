@@ -1,0 +1,332 @@
+/*---------------
+   common style
+------------------*/
+body{
+    margin: 0;
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    color: gray;
+}
+
+/*---------------------
+    navigation part 
+--------------------*/
+.navbar{
+    background-color: rgba(10, 10, 185, 0.849);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);  
+    place-items: center;
+    overflow: hidden;
+}
+.nav-title{
+    color: white;
+     margin-left: 10px;
+     transition: transform 2s ease-in-out;
+}
+.nav-title:hover{
+    transform: scale(1.5);
+    color: brown;
+}
+.nav-title h1{
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+
+    font-size: 3rem;
+}
+.nav-btn{
+    margin-top: 38px;
+}
+.nav-title a{
+    background-color:rgb(250, 32, 141);
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+.nav-img{
+    width: 556px;
+    height: 438px;
+    margin-top: 67px;
+    /* margin-right: 150px; */
+}
+.nav-img img{
+    height: 338px;
+    width: 400px;
+    transition: transform 2s ease-in-out;
+}
+
+.nav-img:hover img{
+    transform: rotate(30deg);
+}
+/*--------------
+    main part 
+-----------------*/
+
+/* image section  */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 27px 30px;
+    margin:70px 0 20px 0;
+}
+.player{
+    width: 330px;
+    height: 474px;
+    box-shadow: 3px 3px 8px gray;
+    border-radius: 10px;
+}
+.player-img img{
+       height:256px ;
+       width: 300px;
+       padding: 15px;
+}
+.player-desc{
+    padding-left: 15px;
+}
+.player h3{
+    margin: 0;
+}
+.player p{
+    margin: 5px;
+}
+.ib{
+    transition: transform 0.9s;
+}
+.ib:hover{
+    transform: scale(1.3);
+    
+}
+
+/* highlights */
+.highlights{
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    grid-column-gap:80px;
+    margin: 80px 0 80px 0;
+}
+.highlights-title h1{
+    color: #562EFF;
+    font-size: 2rem;
+    margin: 0;
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Roboto Slab', serif;
+}
+.description{
+    width: 329px;
+    height: 299px;
+    margin-top: 50px;
+}
+.btn a{
+    background-color:rgb(250, 32, 141);
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+.match-img img{
+    height:356px ;
+    width: 500px;
+}
+
+/* top players  */
+.top-players{
+    margin-bottom: 30px;
+}
+.top-players h1{
+    font-size: 2.5rem;
+}
+.section-title{
+    color: #562EFF;
+    font-size: 24px;
+    margin-top: 3px;
+    font-family: 'Roboto Slab', serif;
+}
+.players-rating{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px 50px;
+}
+.player-info{
+    display: flex;
+    align-items: center;
+}
+.player-info img{
+    height: 56px;
+    width: 56px;
+    border-radius: 50%
+}
+.player-name{
+    margin: 16px;
+    font-size: 18px;
+}
+
+/* official sponser */
+.sponser-area{
+    margin:60px 0 60px 0;
+}
+.sponser-title{
+      font-size: 2.5rem;
+}
+.company-name{
+    margin-top: 40px;
+}
+.company-name a{
+    text-decoration: none;
+    padding:10px 20px;
+}
+#tcl{
+    background-color: red;
+    border-radius: 30px;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.7rem;
+    margin: 10px;
+}
+
+#kwai{
+    border: 1px solid gray;
+    border-radius: 30px;
+    color: orangered;
+    font-size: 1.7rem;
+    margin: 10px;
+}
+#betson{
+    background-color: orangered;
+    color: white;
+    border-radius: 30px;
+    font-size: 1.7rem;
+    margin: 10px;
+}
+#sinovac{
+    border: 1px solid gray;
+    border-radius: 30px;
+    color: black;
+    font-size: 1.7rem;
+    margin: 10px;
+    font-weight: 700;
+}
+span{
+    color: brown;
+}
+/*---------------------
+    footer part 
+-------------------*/
+footer{
+    margin: 60px 0 60px 0;
+}
+
+.footer-img img{
+    height: 120px;
+    width: 400px;
+}
+.social-icon{
+    margin-left: 10px;
+}
+.fab{
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(116, 107, 107);
+    background-color: rgb(219, 218, 218);
+    border-radius: 50%;
+}
+
+/*-------------
+   media query
+--------------*/
+
+/* mobile device */
+@media only screen and (max-width:688px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav-title:hover{
+        transform: scale(0.8);
+    }
+    .nav-title h1{
+        font-size: 2rem;
+        padding: 10px 250px 0 0;
+    }
+   
+    .match-img{
+        margin-top:0px;
+        margin-bottom:30px;
+    }
+    .match-img img{
+        width: 330px;
+        height: 274px;
+    }
+    .footer-img img{
+        width: 300px; 
+    }
+    .container, .navbar{
+        width: 100%;
+    }
+    .navbar, .players, .highlights, .players-rating{
+         grid-template-columns:repeat(1,1fr); 
+    }
+    .company-name a{
+        padding:5px 10px;
+        }
+    #tcl{
+         font-size: 1rem;
+         margin: 5px;
+    }
+    #kwai{
+        font-size: 1rem;
+        margin: 5px;
+    }
+    #betson{
+        font-size: 1rem;
+        margin: 5px;
+    }
+    #sinovac{
+        font-size: 1rem;
+        margin: 5px;
+    }
+}
+
+/* tab  */
+@media only screen and (min-width:689px) and (max-width:991px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav-title{
+        padding-left: 20px;
+    }
+    .nav-title:hover{
+        transform: scale(0.8);
+    }
+    .nav-title h1{
+          font-size: 1.7rem;
+          
+    }
+    .nav-img img{
+        margin-left: 120px;
+    }
+    .container, .navbar{
+        width: 100%;
+    }
+    .highlights{
+        margin:60px 20px;
+    }
+    .match-img img{
+        width: 330px;
+        height: 274px;
+    }
+    .navbar, .players, .highlights, .players-rating{
+         grid-template-columns:repeat(2,1fr); 
+    }
+    .nav-title{
+        font-size: 1rem;
+    }
+}
